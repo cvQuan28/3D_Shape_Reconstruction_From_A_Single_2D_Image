@@ -5,7 +5,7 @@
 
     _11/04/2023_
     
-    _Mohammadreza Armandpour, Ali Sadeghian, Huangjie Zheng, Amir Sadeghian, Mingyuan Zhou_
+    _Authors: Mohammadreza Armandpour, Ali Sadeghian, Huangjie Zheng, Amir Sadeghian, Mingyuan Zhou_
       
    _link paper: https://arxiv.org/pdf/2304.04968v3.pdf_
 
@@ -20,7 +20,7 @@
    
    _29/09/2022_
     
-    _Ben Poole, Ajay Jain, Jonathan T. Barron, Ben Mildenhall_
+    _Authors: Ben Poole, Ajay Jain, Jonathan T. Barron, Ben Mildenhall_
       
    _link paper: https://arxiv.org/pdf/2209.14988v1.pdf_
 
@@ -38,7 +38,7 @@
    
    _13/04/2016_
     
-   _Junyuan Xie, Ross Girshick, Ali Farhadi_
+   _Authors: Junyuan Xie, Ross Girshick, Ali Farhadi_
       
    _link paper: https://arxiv.org/pdf/1604.03650v1.pdf_
       
@@ -57,7 +57,7 @@
    
    _30/06/2023_
    
-   _Guocheng Qian, Jinjie Mai, Abdullah Hamdi, Jian Ren, Aliaksandr Siarohin, Bing Li, Hsin-Ying Lee, Ivan Skorokhodov, Peter Wonka, Sergey Tulyakov, Bernard Ghanem_
+   _Authors: Guocheng Qian, Jinjie Mai, Abdullah Hamdi, Jian Ren, Aliaksandr Siarohin, Bing Li, Hsin-Ying Lee, Ivan Skorokhodov, Peter Wonka, Sergey Tulyakov, Bernard Ghanem_
 
    _link paper: https://arxiv.org/pdf/2306.17843v2.pdf_
 
@@ -73,7 +73,7 @@
    
    _02/02/2023_
 
-   _Zhaoxi Chen, Guangcong Wang, Ziwei Liu_
+   _Authors: Zhaoxi Chen, Guangcong Wang, Ziwei Liu_
 
    _link paper: https://arxiv.org/pdf/2302.01330v2.pdf_
 
@@ -84,6 +84,65 @@
    2. ### Code:
    
       link git: https://github.com/frozenburning/scenedreamer
-         
+
+      faster demo with Hugging Face : https://huggingface.co/spaces/FrozenBurning/SceneDreamer
+      
    
+6. [NeuralLift-360: Lifting An In-the-wild 2D Photo to A 3D Object with 360° Views](https://arxiv.org/pdf/2211.16431v2.pdf)
+
+   _29/11/2022_
+   
+   _Authors: Dejia Xu, Yifan Jiang, Peihao Wang, Zhiwen Fan, Yi Wang, Zhangyang Wang_
+   
+   _link paper: https://arxiv.org/pdf/2211.16431v2.pdf_
+
+   1. ### Abstract:
+   
+      Virtual reality and augmented reality (XR) bring increasing demand for 3D content. However, creating high-quality 3D content requires tedious work that a human expert must do. In this work, we study the challenging task of lifting a single image to a 3D object and, for the first time, demonstrate the ability to generate a plausible 3D object with 360{\deg} views that correspond well with the given reference image. By conditioning on the reference image, our model can fulfill the everlasting curiosity for synthesizing novel views of objects from images. Our technique sheds light on a promising direction of easing the workflows for 3D artists and XR designers. We propose a novel framework, dubbed NeuralLift-360, that utilizes a depth-aware neural radiance representation (NeRF) and learns to craft the scene guided by denoising diffusion models. By introducing a ranking loss, our NeuralLift-360 can be guided with rough depth estimation in the wild. We also adopt a CLIP-guided sampling strategy for the diffusion prior to provide coherent guidance. Extensive experiments demonstrate that our NeuralLift-360 significantly outperforms existing state-of-the-art baselines
+   
+   2. ### Code:
+      
+      link git: https://github.com/VITA-Group/NeuralLift-360
+      
+      Quickstart with colab: https://colab.research.google.com/drive/15YCsqaO6l94HueVwPQgHqVVDUJzdOEO5?usp=sharing
+         
+7. [Pose2Mesh: Graph Convolutional Network for 3D Human Pose and Mesh Recovery from a 2D Human Pose](https://arxiv.org/pdf/2008.09047v3.pdf)
+
+   _ECCV 2020_
+
+   _Authors: Hongsuk Choi, Gyeongsik Moon, Kyoung Mu Lee_
+
+   _link paper : https://arxiv.org/pdf/2008.09047v3.pdf_
+
+   1. ### Abstract:
+   
+      Most of the recent deep learning-based 3D human pose and mesh estimation methods regress the pose and shape parameters of human mesh models, such as SMPL and MANO, from an input image. The first weakness of these methods is an appearance domain gap problem, due to different image appearance between train data from controlled environments, such as a laboratory, and test data from in-the-wild environments. The second weakness is that the estimation of the pose parameters is quite challenging owing to the representation issues of 3D rotations. To overcome the above weaknesses, we propose Pose2Mesh, a novel graph convolutional neural network (GraphCNN)-based system that estimates the 3D coordinates of human mesh vertices directly from the 2D human pose. The 2D human pose as input provides essential human body articulation information, while having a relatively homogeneous geometric property between the two domains. Also, the proposed system avoids the representation issues, while fully exploiting the mesh topology using a GraphCNN in a coarse-to-fine manner. We show that our Pose2Mesh outperforms the previous 3D human pose and mesh estimation methods on various benchmark datasets.
+   
+   2. ### Code:
+   
+      link git: 
+   
+         * https://github.com/hongsukchoi/Pose2Mesh_RELEASE
+         * https://github.com/karanshahgithub/CS256-AI-Pose2Mesh
             
+8. [DreamGaussian: Generative Gaussian Splatting for Efficient 3D Content Creation](https://arxiv.org/pdf/2309.16653.pdf)
+
+   _28/09/2023_
+
+   _Authors: Jiaxiang Tang, Jiawei Ren, Hang Zhou, Ziwei Liu, Gang Zeng_
+
+   _link paper: https://arxiv.org/pdf/2309.16653.pdf
+
+   1. ### Abstract:
+
+      Recent advances in 3D content creation mostly leverage optimization-based 3D generation via score distillation sampling (SDS). Though promising results have been exhibited, these methods often suffer from slow per-sample optimization, limiting their practical usage. In this paper, we propose DreamGaussian, a novel 3D content generation framework that achieves both efficiency and quality simultaneously. Our key insight is to design a generative 3D Gaussian Splatting model with companioned mesh extraction and texture refinement in UV space. In contrast to the occupancy pruning used in Neural Radiance Fields, we demonstrate that the progressive densification of 3D Gaussians converges significantly faster for 3D generative tasks. To further enhance the texture quality and facilitate downstream applications, we introduce an efficient algorithm to convert 3D Gaussians into textured meshes and apply a fine-tuning stage to refine the details. Extensive experiments demonstrate the superior efficiency and competitive generation quality of our proposed approach. Notably, DreamGaussian produces high-quality textured meshes in just 2 minutes from a single-view image, achieving approximately 10 times acceleration compared to existing methods.
+   
+   2. ### Code:
+   
+      link git:
+         * https://github.com/dreamgaussian/dreamgaussian
+         * https://github.com/camenduru/dreamgaussian-colab
+      
+      Quickstart with colab: https://colab.research.google.com/drive/1sLpYmmLS209-e5eHgcuqdryFRRO6ZhFS?usp=sharing
+
+      faster demo with Huggingface : https://huggingface.co/spaces/jiawei011/dreamgaussian
